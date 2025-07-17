@@ -37,7 +37,7 @@ The final credit scores (0–500 range) were grouped and analyzed:
 - **Insight:** A moderate number of users have acceptable credit, possibly in the process of building or recovering their financial credibility.
 
 ### 🟢 Good to Very Good Scores (700–900)
-- **Wallets:** ~550  
+- **Wallets:** ~300  
 - **Interpretation:** A strong cluster of users falls within this range, suggesting overall healthy credit behavior.
 
 ### 🔵 Excellent Scores (900–1000)
@@ -75,4 +75,4 @@ The dataset is **heavily skewed** toward high credit scores (**900–1000**).
   - Affect the performance and generalization of a predictive model.
   - Lead to overfitting or biased predictions toward higher scores.
 
-> ⚠️ It's important to consider **resampling**, **weighting**, or **data augmentation** techniques when training models to ensure fairness and accuracy.
+
