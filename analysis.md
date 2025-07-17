@@ -12,29 +12,41 @@ The final credit scores (0–500 range) were grouped and analyzed:
 | 300–400     | ~3                |
 | 400–500     | 25                |
 | 500–600     | ~32               |
-| 600–700     | 0                 |
-| 700–800     | 0                 |
-| 800–900     | 0                 |
-| 900–1000    | 0                 |
+| 600–700     | ~200                |
+| 700–800     | ~300                 |
+| 800–900     | ~250                |
+| 900–1000    | <2500                |
 
 
 ![Score Distribution](score_distribution.png)
 
 ---
 
-## 🧠 Observations
+## 📊 Credit Score Distribution Analysis
 
-### 🔻 Low Score Wallets (0–100)
-- Frequently inactive
-- Low balance and transaction count
-- Delayed repayments or low recharge frequency
-- Irregular or sparse wallet usage
+### 🔴 Low Credit Scores (0–300)
+- **Total Wallets:** 0  
+- **Interpretation:** No users fall in the poor credit range, which may indicate good financial behavior across users or prior data filtering.
 
-### 🔺 High Score Wallets (400–500)
-- Regular usage and transactions
-- High wallet balance and repayment consistency
-- Positive usage frequency and reliability patterns
-- Generally belong to active, reliable customers
+### 🟠 Below Average Scores (300–500)
+- **Wallets:** ~28  
+- **Interpretation:** Very few users are at risk or show poor credit health.
+
+### 🟡 Average to Good Scores (500–700)
+- **Wallets:** ~232  
+- **Insight:** A moderate number of users have acceptable credit, possibly in the process of building or recovering their financial credibility.
+
+### 🟢 Good to Very Good Scores (700–900)
+- **Wallets:** ~550  
+- **Interpretation:** A strong cluster of users falls within this range, suggesting overall healthy credit behavior.
+
+### 🔵 Excellent Scores (900–1000)
+- **Wallets:** <2500  
+- **Insight:**  
+  - Most wallets belong to users with **high credit scores**.  
+  - This may indicate:
+    - A strong, financially responsible user base, or  
+    - A **bias in the dataset**, where low-score users are underrepresented.
 
 ---
 
@@ -46,10 +58,14 @@ The final credit scores (0–500 range) were grouped and analyzed:
 
 ---
 
-## ✅ Conclusion
+## ✅ Final Summary
 
-The model successfully segments wallets and assigns scores reflecting their creditworthiness. This approach can help in:
+The dataset is **heavily skewed** toward high credit scores (**900–1000**).
 
-- Personalized offers
-- Credit-line decisions
-- Risk management
+### 📌 Implications:
+- The product or platform may be **targeted at financially responsible users**.
+- There may be a **data imbalance**, which can:
+  - Affect the performance and generalization of a predictive model.
+  - Lead to overfitting or biased predictions toward higher scores.
+
+> ⚠️ It's important to consider **resampling**, **weighting**, or **data augmentation** techniques when training models to ensure fairness and accuracy.
