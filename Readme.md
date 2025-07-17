@@ -1,7 +1,9 @@
 # 🧠 Credit Score Modeling and Wallet Segmentation
 
 This project involves clustering customer wallets based on behavioral and financial features, and assigning each wallet a credit score (ranging from 0 to 1000) using regression-based machine learning models.
+
 ---
+
 ## 🚀 Workflow
 
 ### 1. Load the JSON data  
