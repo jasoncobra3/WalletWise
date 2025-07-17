@@ -1,35 +1,45 @@
 # 🧠 Credit Score Modeling and Wallet Segmentation
 
-This project involves clustering customer wallets based on behavioral and financial features, and assigning them a credit score using machine learning models.
+This project involves clustering customer wallets based on behavioral and financial features, and assigning each wallet a credit score (ranging from 0 to 1000) using regression-based machine learning models.
+---
+## 🚀 Workflow
 
-## 🔧 Methodology
+### 1. Load the JSON data  
+Parse the raw data and load it for analysis.
 
-1. **Data Preprocessing**  
-   - Numeric-only features selected  
-   - Missing values handled  
-   - Standardization with `StandardScaler`
+### 2. Convert to Pandas DataFrame (Preprocessing)  
+Clean and normalize the structure for further processing.
 
-2. **Clustering**  
-   - Used KMeans to cluster wallets  
-   - Optimal `k` determined using Elbow method  
-   - Visualized clusters using PCA (2D)
+### 3. Feature Engineering  
+Derive meaningful features relevant to credit scoring.
 
-3. **Modeling**  
-   - Built regression models to assign a credit score to each wallet  
-   - Tried Linear Regression, Random Forest, and XGBoost  
-   - Selected model based on R² and RMSE scores
+### 4. Exploratory Data Analysis (EDA)  
+Visualize and understand trends, patterns, and distributions.
 
-4. **Feature Importance**  
-   - Evaluated feature importance from the best model  
-   - Used it to understand key drivers of the credit score
+### 5. Model Training  
+Train and evaluate various regression models to predict credit scores.
+
+### 6. Feature Importance  
+Analyze which features contribute most to the credit score prediction.
+
+### 7. Cluster Analysis & Visualization  
+Group wallets based on behavior using KMeans and visualize clusters with PCA.
+
+### 8. Export Final Scores  
+Save the wallet IDs and their credit scores to a CSV file.
+  
+---
 
 ## 📈 Flow Architecture
 
-1. Data → Preprocessing  
-2. → Clustering (KMeans)  
-3. → Score prediction (Model training)  
-4. → Final scoring + Export CSV  
-5. → Analysis (Score distribution, wallet behavior)
+1. **Raw Data (JSON)** → Preprocessing & Feature Engineering  
+2. → Exploratory Data Analysis (EDA)  
+3. → Model Training for Credit Score Prediction  
+4. → Feature Importance Analysis  
+5. → Clustering (KMeans + PCA Visualization)  
+6. → Final Scoring & Export to CSV  
+7. → Analysis (Score Distribution, Wallet Behavior)
+
 
 ---
 
