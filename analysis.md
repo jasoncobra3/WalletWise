@@ -50,11 +50,18 @@ The final credit scores (0–500 range) were grouped and analyzed:
 
 ---
 
-## 📌 Feature Influence (Top Drivers of Score)
-1. `repayment_behavior`  
-2. `txn_frequency`  
-3. `avg_balance`  
-4. `recharge_volume`
+## 🔍 Feature Influence (Top Drivers of Score)
+
+The most important features influencing the credit score (as per feature importance analysis) are:
+
+- **Repay-Borrow Ratio**: Indicates how much of the borrowed amount is being repaid — a direct signal of creditworthiness.
+- **Liquidation Count**: Frequent liquidations may signal poor financial health or risky behavior.
+- **Total Borrow Amount**: Higher borrow amounts can be either good or bad depending on repayment behavior.
+- **Borrow Count**: A high number of borrow events shows borrowing frequency.
+- **Repay Count**: How consistently the user is repaying.
+- **Total Repay Amount**: Total money repaid over time, showcasing repayment strength.
+
+These features are strong indicators of financial discipline and are directly tied to how users manage their credit.
 
 ---
 
